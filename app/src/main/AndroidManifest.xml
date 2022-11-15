@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="longlevan2k.com.example.manageshopclothing">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ManageShopClothing"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".main.MainActivityAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".main.SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".main.Login"
+            android:exported="false" />
+        <activity
+            android:name=".main.EmployeeAccount"
+            android:exported="false" />
+        <activity
+            android:name=".main.ManagerAccount"
+            android:exported="false" />
+        <activity
+            android:name=".main.EmployeeManager"
+            android:exported="false" />
+        <activity
+            android:name=".main.Turnover"
+            android:exported="false" />
+        <activity
+            android:name=".main.Provider"
+            android:exported="false" />
+        <activity
+            android:name=".main.Product"
+            android:exported="false" />
+        <activity
+            android:name=".main.Customer"
+            android:exported="false" />
+        <activity
+            android:name=".main.Bills"
+            android:exported="false" />
+        <activity
+            android:name=".main.AddBills"
+            android:exported="false" />
+        <activity
+            android:name=".main.AddCustomer"
+            android:exported="false" />
+        <activity
+            android:name=".main.Warehouse"
+            android:exported="false" />
+        <activity
+            android:name=".main.MainActivityManager"
+            android:exported="false" />
+        <activity
+            android:name=".main.MainActivityStaff"
+            android:exported="false" />
+        <activity
+            android:name=".main.AddProduct"
+            android:exported="false" />
+        <activity
+            android:name=".main.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="longlevan2k.com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

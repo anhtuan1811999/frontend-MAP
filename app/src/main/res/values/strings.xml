@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Manage Shop Clothing</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="size">
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>Áo</item>
+        <item>Quần</item>
+        <item>Váy</item>
+        <item>Áo khoác</item>
+    </string-array>
+
+    <string-array name="role">
+        <item>manager</item>
+        <item>Nhân viên</item>
+    </string-array>
+</resources>
